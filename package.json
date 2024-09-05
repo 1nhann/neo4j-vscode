@@ -262,6 +262,18 @@
 					"command": "neo4j.setParameterValue",
 					"group": "inline"
 				}
+			],
+			"editor/context": [
+				{
+				  "command": "neo4j.runReadCypher",
+				  "when": "editorTextFocus && resourceExtname == '.cypher'",
+				  "group": "navigation"
+				},
+				{
+					"command": "neo4j.runWriteCypher",
+					"when": "editorTextFocus && resourceExtname == '.cypher'",
+					"group": "navigation"
+				}
 			]
 		}
 	},
